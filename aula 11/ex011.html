@@ -7,23 +7,21 @@
 </head>
 <body>
     <h1>Vamos nos conhecer melhor!</h1>
-    <p>Em que país você nasceu? <input type="text" name="nas" id="inasc"></p>
-    <input type="button" value="Verificar" onclick="verificar()">
+    <p>Em que país você nasceu? <input type="text" name="nas" id="pais"></p>
+    <input type="button" value="Verificar" onclick="analisar()">
 
     <div id="res">
 
     </div>
 
     <script>
-        function verificar() {
-            var nacionalidade = window.document.getElementById('inasc')
+        function analisar() {
+            var p = window.document.getElementById('pais')
             var res = window.document.getElementById('res')
-            if(inasc = 'Brasil'){
-                res.innerHTML = `Você é Brasileiro!`
-            } else(inasc || 'Brasil'){
-                res.innerHTML = `Você é Estrangeiro!`
-            }
-            
+            var txtp = String(p.value)
+            if (txtp == 'Brasil') {
+                res.innerHTML = 'Você é brasileiro!'} else {res.innerHTML = 'Você é estrangeiro!'}
+ 
         }
     </script>
 </body>
