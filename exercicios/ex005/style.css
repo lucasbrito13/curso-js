@@ -20,6 +20,15 @@ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 
 }
 
+#number_entada {
+    width: 100px;
+}
+
+#flista{
+    width: 150px;
+    margin-top: 15px;
+}
+
 div{
     padding: 8px;
 }
