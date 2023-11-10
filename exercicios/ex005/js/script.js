@@ -57,8 +57,8 @@ function finalizar() {
         let tot = valores.length
         let maior = valores[0]
         let menor = valores[0]
-        let soma = valores[0]
-        let media = valores[0]
+        let soma = 0
+        let media = 0
 
         for(let pos in valores) {
             
